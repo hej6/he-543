@@ -28,25 +28,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body 
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        style = {{
-          display: "flex",
-          flexDirection: "column",
-          minHeight: "100vh",
-        }}
-      >
+
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col gap-5 p-5`}>
+        
         <Header />
 
-        <div style={{ display: "flex", flex: 1 }}>
+        <div className="flex flex-1 gap-5">
+
           <Aside />
-          <main style={{ flex: 1, padding: "2rem" }}>
+
+          <main className="flex-1 p-8 bg-green-400 flex flex-col justify-center gap-5">
             {children}
           </main>
+
         </div>
 
         <Footer />
+
       </body>
+
     </html>
   );
 }
