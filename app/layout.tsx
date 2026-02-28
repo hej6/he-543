@@ -37,7 +37,7 @@ export default function RootLayout({
 
           <Aside />
 
-          <main className="flex-1 p-8 bg-green-400 flex flex-col justify-center gap-5">
+          <main className="flex-1 p-8 bg-green-400 flex flex-col justify-center gap-5 rounded">
             {children}
           </main>
 

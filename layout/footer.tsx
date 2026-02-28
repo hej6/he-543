@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
     return (
-        <footer style={{ padding: '1rem', backgroundColor: '#2200ff' }}>
+        <footer className="bg-blue-500 p-6 rounded flex flex-col items-left justify-left">
             <h1>Footer</h1>
         </footer>
     );

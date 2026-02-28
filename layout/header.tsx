@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { FaFlagUsa } from "react-icons/fa6";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const Header: React.FC = () => {
         {/* Header container */}
         <div className="bg-pink-400 h-16 px-10 flex items-center justify-center rounded">
           <span className="text-white text-2xl font-semibold">
-            Assignment 04
+            To-Do App
           </span>
         </div>
 
@@ -33,7 +34,7 @@ const Header: React.FC = () => {
 
         {/* Nav Items */}
         <a
-        href="#"
+        href="/"
         className="
             bg-purple-800 text-white px-6 py-3 rounded
             shadow-md
@@ -47,7 +48,7 @@ const Header: React.FC = () => {
         </a>
 
         <a
-        href="#"
+        href="/about"
         className="
             bg-purple-800 text-white px-6 py-3 rounded
             shadow-md
